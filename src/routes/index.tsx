@@ -1,10 +1,13 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteLayout } from "@/components/SiteLayout";
 import { Star, MapPin, Clock, Phone, ChevronRight } from "lucide-react";
-import heroPizza from "@/assets/hero-pizza.jpg";
-import poutine from "@/assets/poutine.jpg";
-import sub from "@/assets/sub.jpg";
-import interior from "@/assets/interior.jpg";
+import {
+  pizzaDeluxe,
+  poutineHero,
+  wings,
+  chickenBurger,
+  storefront,
+} from "@/assets/photos";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -13,13 +16,13 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Quality Pizza & Subs in Mundare, Alberta. Hand-tossed pizzas, hearty subs, and famous poutine. Open today — call (780) 764-2233.",
+          "Quality Pizza & Subs in Mundare, Alberta. Hand-tossed pizzas, hearty subs, wings, and famous poutine. Open today — call (780) 764-2233.",
       },
       { property: "og:title", content: "Quality Pizza & Subs — Mundare, AB" },
       {
         property: "og:description",
         content:
-          "Hand-tossed pizzas, hearty subs, and famous poutine in Mundare, Alberta.",
+          "Hand-tossed pizzas, hearty subs, wings, and famous poutine in Mundare, Alberta.",
       },
       { property: "og:url", content: "/" },
     ],
@@ -40,12 +43,12 @@ function Home() {
               Open today · Closes 8 p.m.
             </div>
             <h1 className="mt-5 font-display text-5xl font-bold leading-[1.05] tracking-tight md:text-6xl">
-              Slow-risen dough.{" "}
+              Hand-tossed pizza.{" "}
               <span className="text-primary">Hometown</span> heart.
             </h1>
             <p className="mt-5 max-w-md text-lg text-muted-foreground">
-              Mundare's go-to spot for hand-tossed pizza, stacked subs, and the
-              poutine everyone keeps coming back for.
+              Mundare's go-to spot for fresh pizza, hot wings, and the poutine
+              everyone keeps coming back for.
             </p>
             <div className="mt-7 flex flex-wrap items-center gap-3">
               <Link
@@ -61,7 +64,7 @@ function Home() {
                 <Phone className="h-4 w-4" /> Order by phone
               </a>
             </div>
-            <div className="mt-8 flex items-center gap-5 text-sm">
+            <div className="mt-8 flex flex-wrap items-center gap-5 text-sm">
               <div className="flex items-center gap-1.5">
                 {[0, 1, 2, 3].map((i) => (
                   <Star key={i} className="h-4 w-4 fill-primary text-primary" />
@@ -80,10 +83,10 @@ function Home() {
               style={{ background: "var(--gradient-warm)" }}
             />
             <img
-              src={heroPizza}
-              alt="Fresh hand-tossed pizza with basil"
-              width={1600}
-              height={1200}
+              src={pizzaDeluxe}
+              alt="House special pizza loaded with toppings"
+              width={1500}
+              height={2000}
               className="aspect-square w-full rounded-[2rem] object-cover shadow-[var(--shadow-warm)]"
             />
             <div className="absolute -bottom-5 -left-5 hidden rounded-2xl border border-border bg-card p-4 shadow-[var(--shadow-soft)] sm:block">
@@ -119,22 +122,22 @@ function Home() {
           <div className="mt-10 grid gap-6 md:grid-cols-3">
             {[
               {
-                img: heroPizza,
-                title: "Hand-Tossed Pizza",
-                desc: "Slow-fermented dough, house sauce, generous toppings.",
+                img: poutineHero,
+                title: "Large Poutine",
+                desc: "Hot fries, squeaky curds, and rich house gravy.",
+                price: "from $10",
+              },
+              {
+                img: wings,
+                title: "Chicken Wings",
+                desc: "Tossed in your favourite sauce — hot, BBQ, honey garlic.",
                 price: "from $14",
               },
               {
-                img: sub,
-                title: "Loaded Subs",
-                desc: "Toasted, stacked, and dressed exactly how you like.",
+                img: chickenBurger,
+                title: "Chicken Burger",
+                desc: "Crispy breaded chicken, lettuce, and a soft sesame bun.",
                 price: "from $11",
-              },
-              {
-                img: poutine,
-                title: "Famous Poutine",
-                desc: "Hot fries, squeaky curds, and rich house gravy.",
-                price: "from $10",
               },
             ].map((item) => (
               <article
@@ -146,8 +149,6 @@ function Home() {
                     src={item.img}
                     alt={item.title}
                     loading="lazy"
-                    width={1024}
-                    height={1024}
                     className="aspect-[4/3] w-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                 </div>
@@ -174,12 +175,10 @@ function Home() {
       <section className="mx-auto max-w-6xl px-5 py-24">
         <div className="grid gap-12 md:grid-cols-2 md:items-center">
           <img
-            src={interior}
-            alt="Inside Quality Pizza & Subs"
+            src={storefront}
+            alt="Quality Pizza & Subs storefront in downtown Mundare"
             loading="lazy"
-            width={1600}
-            height={1000}
-            className="aspect-[4/3] w-full rounded-2xl object-cover shadow-[var(--shadow-soft)]"
+            className="aspect-[3/4] w-full rounded-2xl object-cover shadow-[var(--shadow-soft)] md:aspect-[4/3]"
           />
           <div>
             <p className="text-sm font-semibold uppercase tracking-wider text-primary">
@@ -215,9 +214,17 @@ function Home() {
             </p>
           </div>
           <div className="space-y-3 rounded-2xl bg-primary-foreground/10 p-6 backdrop-blur">
-            <InfoRow icon={<MapPin className="h-4 w-4" />} label="5029 50 St, Mundare, AB" />
-            <InfoRow icon={<Phone className="h-4 w-4" />} label="(780) 764-2233" />
-            <InfoRow icon={<Clock className="h-4 w-4" />} label="Open today · Closes 8 p.m." />
+            <InfoRow icon={<MapPin className="h-4 w-4" />}>
+              5029 50 St, Mundare, AB
+            </InfoRow>
+            <InfoRow icon={<Phone className="h-4 w-4" />}>
+              <a href="tel:+17807642233" className="hover:underline">
+                (780) 764-2233
+              </a>
+            </InfoRow>
+            <InfoRow icon={<Clock className="h-4 w-4" />}>
+              Open today · Closes 8 p.m.
+            </InfoRow>
             <Link
               to="/contact"
               className="mt-4 inline-flex items-center gap-2 rounded-full bg-primary-foreground px-5 py-2.5 text-sm font-semibold text-primary"
@@ -242,13 +249,19 @@ function Stat({ label, value }: { label: string; value: string }) {
   );
 }
 
-function InfoRow({ icon, label }: { icon: React.ReactNode; label: string }) {
+function InfoRow({
+  icon,
+  children,
+}: {
+  icon: React.ReactNode;
+  children: React.ReactNode;
+}) {
   return (
     <div className="flex items-center gap-3 text-sm">
       <span className="grid h-8 w-8 place-items-center rounded-full bg-primary-foreground/15">
         {icon}
       </span>
-      {label}
+      {children}
     </div>
   );
 }

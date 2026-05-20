@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { SiteLayout } from "@/components/SiteLayout";
-import interior from "@/assets/interior.jpg";
+import { storefrontSunset } from "@/assets/photos";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
@@ -44,11 +44,11 @@ function AboutPage() {
       <section className="border-y border-border bg-secondary/40">
         <div className="mx-auto grid max-w-6xl gap-12 px-5 py-20 md:grid-cols-2 md:items-center">
           <img
-            src={interior}
-            alt="Inside the restaurant"
+            src={storefrontSunset}
+            alt="Quality Pizza & Subs storefront at golden hour"
             loading="lazy"
-            width={1600}
-            height={1000}
+            
+            
             className="aspect-[4/3] w-full rounded-2xl object-cover shadow-[var(--shadow-soft)]"
           />
           <div className="space-y-5 text-muted-foreground">
