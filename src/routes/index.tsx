@@ -38,11 +38,7 @@ function Home() {
       <section className="relative overflow-hidden">
         <div className="mx-auto grid max-w-6xl gap-10 px-5 py-16 md:grid-cols-2 md:items-center md:py-24">
           <div>
-            <div className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-3 py-1 text-xs font-medium text-muted-foreground">
-              <span className="h-2 w-2 rounded-full bg-accent" />
-              Open today · Closes 8 p.m.
-            </div>
-            <h1 className="mt-5 font-display text-5xl font-bold leading-[1.05] tracking-tight md:text-6xl">
+            <h1 className="font-display text-5xl font-bold leading-[1.05] tracking-tight md:text-6xl">
               Hand-tossed pizza.{" "}
               <span className="text-primary">Hometown</span> heart.
             </h1>
