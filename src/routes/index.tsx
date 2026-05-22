@@ -1,13 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteLayout } from "@/components/SiteLayout";
-import { Star, MapPin, Clock, Phone, ChevronRight } from "lucide-react";
-import {
-  pizzaDeluxe,
-  poutineHero,
-  wings,
-  chickenBurger,
-  storefront,
-} from "@/assets/photos";
+import { MapPin, Clock, Phone, ChevronRight } from "lucide-react";
+
 
 export const Route = createFileRoute("/")({
   head: () => ({

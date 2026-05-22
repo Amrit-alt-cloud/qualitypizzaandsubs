@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { SiteLayout } from "@/components/SiteLayout";
-import { storefrontSunset } from "@/assets/photos";
+
 
 export const Route = createFileRoute("/about")({
   head: () => ({
