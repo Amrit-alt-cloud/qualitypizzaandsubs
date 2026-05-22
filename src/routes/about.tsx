@@ -42,15 +42,7 @@ function AboutPage() {
       </section>
 
       <section className="border-y border-border bg-secondary/40">
-        <div className="mx-auto grid max-w-6xl gap-12 px-5 py-20 md:grid-cols-2 md:items-center">
-          <img
-            src={storefrontSunset}
-            alt="Quality Pizza & Subs storefront at golden hour"
-            loading="lazy"
-            
-            
-            className="aspect-[4/3] w-full rounded-2xl object-cover shadow-[var(--shadow-soft)]"
-          />
+        <div className="mx-auto max-w-3xl px-5 py-20 text-center">
           <div className="space-y-5 text-muted-foreground">
             <p>
               We keep it simple. Good ingredients, slow-fermented dough, real
