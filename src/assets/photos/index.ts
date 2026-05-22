@@ -3,7 +3,7 @@ import storefront from "./PnUEnLsKyT.jpg";
 import storefrontSunset from "./wktVXEa30x.jpg";
 import storefrontClose from "./NIKol6uHE3.jpg";
 import signCloseup from "./yaEKJfS3ZB.jpg";
-import pizzaDeluxe from "./hero-pizza-vibrant.jpg";
+import pizzaDeluxe from "./hero-pizza-real.jpg";
 
 import pizzaChicken from "./LGkT0qY8lP.jpg";
 import pizzaPepperoni from "./JJYrwId1oH.jpg";
