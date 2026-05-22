@@ -31,14 +31,6 @@ export function SiteHeader() {
             </Link>
           ))}
         </nav>
-        <a
-          href="tel:+17807642233"
-          className="inline-flex items-center gap-2 rounded-full bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground shadow-sm transition-transform hover:scale-[1.03]"
-        >
-          <Phone className="h-4 w-4" />
-          <span className="hidden sm:inline">(780) 764-2233</span>
-          <span className="sm:hidden">Call</span>
-        </a>
       </div>
     </header>
   );
