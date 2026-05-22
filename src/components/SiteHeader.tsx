@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { Pizza, Phone } from "lucide-react";
+import { Pizza } from "lucide-react";
 
 const nav = [
   { to: "/", label: "Home" },
