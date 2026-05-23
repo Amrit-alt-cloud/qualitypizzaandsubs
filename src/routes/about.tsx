@@ -9,7 +9,7 @@ export const Route = createFileRoute("/about")({
       {
         name: "description",
         content:
-          "A family-run pizza spot in Mundare, AB serving hand-tossed pizza, subs, and poutine since day one.",
+          "A family-run pizza spot in Mundare, AB serving fresh pizza, subs, and poutine since day one.",
       },
       { property: "og:title", content: "About — Quality Pizza & Subs" },
       {
@@ -35,7 +35,7 @@ function AboutPage() {
         </h1>
         <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
           Quality Pizza &amp; Subs has been a fixture on 50th Street for years —
-          the kind of place where the dough is hand-tossed in the morning, the
+          the kind of place where the dough is made fresh in the morning, the
           gravy simmers all day, and the regulars are on a first-name basis with
           the kitchen.
         </p>
@@ -55,7 +55,7 @@ function AboutPage() {
               we'll take care of you.
             </p>
             <ul className="grid gap-3 pt-2 text-foreground">
-              <li>• Hand-tossed pizza dough, made daily</li>
+              <li>• Fresh pizza dough, made daily</li>
               <li>• Real cheese curds in every poutine</li>
               <li>• Family-run · locally loved</li>
             </ul>

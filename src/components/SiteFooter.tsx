@@ -13,7 +13,7 @@ export function SiteFooter() {
             </span>
           </div>
           <p className="mt-3 max-w-sm text-sm text-muted-foreground">
-            A Mundare favourite for hand-tossed pizza, hearty subs, and
+            A Mundare favourite for fresh pizza, hearty subs, and
             crowd-pleasing poutine. Family-run, locally loved.
           </p>
         </div>

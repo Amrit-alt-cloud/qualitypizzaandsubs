@@ -10,13 +10,13 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Quality Pizza & Subs in Mundare, Alberta. Hand-tossed pizzas, hearty subs, wings, and famous poutine. Open today — call (780) 764-2233.",
+          "Quality Pizza & Subs in Mundare, Alberta. Fresh pizzas, hearty subs, wings, and famous poutine. Open today — call (780) 764-2233.",
       },
       { property: "og:title", content: "Quality Pizza & Subs — Mundare, AB" },
       {
         property: "og:description",
         content:
-          "Hand-tossed pizzas, hearty subs, wings, and famous poutine in Mundare, Alberta.",
+          "Fresh pizzas, hearty subs, wings, and famous poutine in Mundare, Alberta.",
       },
       { property: "og:url", content: "/" },
     ],
@@ -32,7 +32,7 @@ function Home() {
       <section className="relative overflow-hidden">
         <div className="mx-auto max-w-3xl px-5 py-16 text-center md:py-24">
           <h1 className="font-display text-5xl font-bold leading-[1.05] tracking-tight md:text-6xl">
-            Hand-tossed pizza.{" "}
+            Fresh pizza.{" "}
             <span className="text-primary">Hometown</span> heart.
           </h1>
           <p className="mx-auto mt-5 max-w-md text-lg text-muted-foreground">
@@ -115,20 +115,6 @@ function Home() {
         </div>
       </section>
 
-      {/* Story strip */}
-      <section className="mx-auto max-w-3xl px-5 py-24 text-center">
-        <p className="text-sm font-semibold uppercase tracking-wider text-primary">
-          Our story
-        </p>
-        <h2 className="mt-2 font-display text-4xl font-bold">
-          A little pizza place with a big following.
-        </h2>
-        <p className="mt-5 text-muted-foreground">
-          Tucked on 50th Street in Mundare, we've been feeding the
-          neighbourhood for years — one pizza, one sub, one bowl of poutine
-          at a time. No shortcuts, no fuss. Just good food made with care.
-        </p>
-      </section>
 
       {/* Visit CTA */}
       <section className="border-t border-border bg-primary text-primary-foreground">
