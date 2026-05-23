@@ -50,7 +50,7 @@ function Home() {
               href="tel:+17807642233"
               className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-6 py-3 text-sm font-semibold text-foreground hover:bg-secondary"
             >
-              <Phone className="h-4 w-4" /> Order by phone
+              <Phone className="h-4 w-4" /> (780) 764-2233
             </a>
           </div>
         </div>
@@ -81,17 +81,17 @@ function Home() {
               {
                 title: "Large Poutine",
                 desc: "Hot fries, squeaky curds, and rich house gravy.",
-                price: "from $10",
+                price: "$10.49",
               },
               {
-                title: "Chicken Wings",
+                title: "10 pcs Chicken Wings",
                 desc: "Tossed in your favourite sauce — hot, BBQ, honey garlic.",
-                price: "from $14",
+                price: "$13.99",
               },
               {
                 title: "Chicken Burger",
-                desc: "Crispy breaded chicken, lettuce, and a soft sesame bun.",
-                price: "from $11",
+                desc: "Crispy breaded chicken, lettuce, tomato, mayo and cheese.",
+                price: "$9.25",
               },
             ].map((item) => (
               <article
