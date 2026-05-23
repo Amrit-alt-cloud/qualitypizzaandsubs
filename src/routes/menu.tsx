@@ -57,10 +57,10 @@ const sections: Section[] = [
   },
   {
     title: "Chicken Strips",
-    tagline: "Combo adds fries & one can of pop",
+    tagline: "",
     items: [
-      { name: "3 pcs Chicken Strips", price: "$8.99  ·  Combo $5.99" },
-      { name: "5 pcs Chicken Strips", price: "$12.99  ·  Combo $5.99" },
+      { name: "3 pcs Chicken Strips", price: "$8.99  ·  + Combo $5.99" },
+      { name: "5 pcs Chicken Strips", price: "$12.99  ·  + Combo $5.99" },
     ],
   },
   {
@@ -93,10 +93,10 @@ const sections: Section[] = [
   },
   {
     title: "Wraps",
-    tagline: "Combo +$5.99 (fries & pop can)",
+    tagline: "",
     items: [
-      { name: "Buffalo Chicken Wrap / Crispy Chicken Wrap", desc: "Lettuce, tomato, crispy chicken, ranch, mozzarella cheese.", price: "$9.99  ·  Combo $5.99" },
-      { name: "Donair Wrap", desc: "Donair meat, lettuce, tomato, onion, cheese, donair sauce.", price: "$11.99  ·  Combo $5.99" },
+      { name: "Buffalo Chicken Wrap / Crispy Chicken Wrap", desc: "Lettuce, tomato, crispy chicken, ranch, mozzarella cheese.", price: "$9.99  ·  + Combo $5.99" },
+      { name: "Donair Wrap", desc: "Donair meat, lettuce, tomato, onion, cheese, donair sauce.", price: "$11.99  ·  + Combo $5.99" },
     ],
   },
   {
@@ -114,8 +114,21 @@ const sections: Section[] = [
     items: [
       { name: "Reg. Poutine", price: "$7.99" },
       { name: "Large Poutine", price: "$10.49" },
+    ],
+  },
+  {
+    title: "Fries & Onion Rings",
+    tagline: "",
+    items: [
       { name: "Reg. Fries / Onion Ring", price: "$5.99" },
       { name: "Large Fries / Onion Ring", price: "$7.99" },
+    ],
+  },
+  {
+    title: "Combos",
+    tagline: "Add to any eligible item — fries & 1 can of pop",
+    items: [
+      { name: "+ Combo upgrade", desc: "Available on chicken strips, burgers, subs, wraps and mozza sticks.", price: "+ $5.99" },
     ],
   },
   {
