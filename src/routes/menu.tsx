@@ -28,78 +28,147 @@ type Section = { title: string; tagline: string; items: Item[] };
 const sections: Section[] = [
   {
     title: "Pizzas",
-    tagline: "Small 10\" / Medium 12\" / Large 14\"  ·  $6.99 / $14.99 / $18.99",
+    tagline:
+      "Personal 8\" $11.45  ·  Medium 12\" $19.99  ·  Large 14\" $23.99  ·  2 Medium $32.99  ·  2 Large $42.99",
     items: [
-      { name: "Pepperoni Pizza", desc: "Pepperoni, pizza sauce and cheese.", price: "$6.99 / $14.99 / $18.99" },
-      { name: "Cheese Pizza", desc: "Pizza sauce and cheese.", price: "$6.99 / $14.99 / $18.99" },
-      { name: "Hawaiian", desc: "Ham, pineapple, pizza sauce and cheese.", price: "$6.99 / $14.99 / $18.99" },
-      { name: "Canadian", desc: "Pepperoni, bacon, mushroom, pizza sauce and cheese.", price: "$6.99 / $14.99 / $18.99" },
-      { name: "Quality Meat Lovers", desc: "Pepperoni, sausage, ham, bacon, pizza sauce and cheese.", price: "$6.99 / $14.99 / $18.99" },
-      { name: "Quality Supreme", desc: "Sausage, ground beef, green pepper, red onion, pizza sauce and cheese.", price: "$6.99 / $14.99 / $18.99" },
-      { name: "Chicken Pizza", desc: "Chicken, green pepper, red onion, mushroom, pizza sauce and cheese.", price: "$6.99 / $14.99 / $18.99" },
-      { name: "BBQ Chicken", desc: "BBQ sauce, cheese, grilled chicken, red onion, green pepper.", price: "$6.99 / $14.99 / $18.99" },
-      { name: "Chicken Garlic", desc: "Garlic sauce, green peppers, red onions, chicken and cheese.", price: "$6.99 / $14.99 / $18.99" },
-      { name: "Donair Pizza", desc: "Green pepper, onion, donair meat, sweet sauce.", price: "$6.99 / $14.99 / $18.99" },
-      { name: "Veggie Pizza", desc: "Mushroom, onion, green pepper, black olive, tomato, pizza sauce and cheese.", price: "$6.99 / $14.99 / $18.99" },
-    ],
-  },
-  {
-    title: "Pizza Deals",
-    tagline: "Pizza pairs",
-    items: [
-      { name: "2 Medium 12\" Pizzas", desc: "Pick any two from our menu.", price: "$25.99" },
-      { name: "2 Large 14\" Pizzas", desc: "Pick any two from our menu.", price: "$35.99" },
-    ],
-  },
-  {
-    title: "Fresh Subs",
-    tagline: "6\" / 9\" & 12\"  ·  add combo (fries + pop can) $4.99",
-    items: [
-      { name: "Quality Sub", desc: "Turkey, beef, cheese, black forest ham and veggies of your choice.", price: "$5.49 / $8.49" },
-      { name: "Quality Club", desc: "Grilled chicken, ham, cheese, bacon and veggies of your choice.", price: "$5.49 / $8.49" },
-      { name: "Teriyaki Chicken", desc: "Teriyaki chicken, mozzarella cheese and veggies of your choice.", price: "$5.49 / $8.49" },
-      { name: "Chicken Sub", desc: "Grilled chicken, cheese and veggies of your choice.", price: "$5.49 / $8.49" },
-      { name: "Beef Sub", desc: "Roasted beef, cheese and veggies of your choice.", price: "$5.49 / $8.49" },
-      { name: "Donair Sub", desc: "Donair meat, mayo, sweet sauce, cheese and veggies of your choice.", price: "$5.49 / $8.49" },
-      { name: "Veggie Sub", desc: "Cheese and all the veggies of your choice.", price: "$5.49 / $8.49" },
-    ],
-  },
-  {
-    title: "Burgers",
-    tagline: "Combo adds fries + pop",
-    items: [
-      { name: "Hamburger", desc: "Lettuce, tomato, ketchup, mustard, beef patty, bacon, pickles, cheese, onion.", price: "$6.49  ·  Combo $9.99" },
-      { name: "Cheeseburger", desc: "Lettuce, tomato, cheese, ketchup, mustard, beef.", price: "$5.99  ·  Combo $8.99" },
-      { name: "Quality Burger", desc: "Double beef patty, onion, lettuce, tomato, ketchup, bacon, cheese.", price: "$7.99  ·  Combo $11.99" },
-      { name: "Chicken Burger", desc: "Chicken, lettuce, tomato, mayo, cheese.", price: "$6.99  ·  Combo $9.99" },
-      { name: "Buffalo Chicken Burger", desc: "Buffalo chicken, lettuce, tomato, mayo, cheese.", price: "$6.99  ·  Combo $9.99" },
+      { name: "Quality Meat Lovers", desc: "Pepperoni, sausage, ham, bacon, pizza sauce and cheese.", price: "" },
+      { name: "Quality Supreme", desc: "Pepperoni, sausage, ground beef, green pepper, onions, pizza sauce and cheese.", price: "" },
+      { name: "Hawaiian", desc: "Ham, pineapple, pizza sauce and cheese.", price: "" },
+      { name: "Pepperoni Pizza", desc: "Pepperoni, pizza sauce and cheese.", price: "" },
+      { name: "Cheese Pizza", desc: "Pizza sauce and cheese.", price: "" },
+      { name: "Veggi Pizza", desc: "Mushroom, onion, green pepper, black olive, pizza sauce, cheese and tomato of your choice.", price: "" },
+      { name: "Alfredo Chicken Pizza", desc: "Chicken, mushroom, onion, Alfredo sauce and cheese.", price: "" },
+      { name: "Chicken Pizza", desc: "Chicken, green pepper, onion, mushroom, pizza sauce and cheese.", price: "" },
+      { name: "Canadian", desc: "Pepperoni, bacon, mushroom, pizza sauce and cheese.", price: "" },
+      { name: "BBQ Chicken", desc: "BBQ sauce, cheese, grilled chicken, onion and green peppers.", price: "" },
+      { name: "Donair Pizza", desc: "Green pepper, onion, donair meat and sweet sauce.", price: "" },
+      { name: "Chicken Garlic", desc: "Garlic sauce, green peppers, onions, chicken and cheese.", price: "" },
+      { name: "Butter Chicken Pizza", desc: "Chicken, mushroom, onion, green pepper, butter chicken sauce and cheese.", price: "" },
     ],
   },
   {
     title: "Chicken Wings",
-    tagline: "Honey garlic · BBQ · salt · salt & pepper · hot · teriyaki · honey garlic chili",
+    tagline:
+      "Flavours: Honey Garlic · BBQ · Salt & Pepper · Hot · Teriyaki · Honey Garlic Chilli",
     items: [
-      { name: "12 pcs Wings", price: "$9.99" },
-      { name: "25 pcs Wings", price: "$20.00" },
+      { name: "10 pcs Wings", price: "$13.99" },
+      { name: "20 pcs Wings", price: "$25.99" },
     ],
   },
   {
     title: "Chicken Strips",
-    tagline: "Add combo (fries + pop) for $2.99",
+    tagline: "Combo adds fries & one can of pop",
     items: [
-      { name: "3 pcs Chicken Strips", price: "$4.99" },
-      { name: "5 pcs Chicken Strips", price: "$7.99" },
+      { name: "3 pcs Chicken Strips", price: "$8.99  ·  Combo $5.99" },
+      { name: "5 pcs Chicken Strips", price: "$12.99  ·  Combo $5.99" },
     ],
   },
   {
-    title: "Poutine & Sides",
+    title: "Burgers",
+    tagline: "Sandwich  ·  Meal (fries & 1 pop can)",
+    items: [
+      { name: "Hamburger", desc: "Lettuce, tomatoes, ketchup, mustard, beef patty, bacon, pickles, cheese and onion.", price: "$9.25  ·  Meal $15.25" },
+      { name: "Cheese Burger", desc: "Lettuce, tomatoes, cheese, ketchup, mustard and beef.", price: "$7.99  ·  Meal $13.99" },
+      { name: "Quality Burger", desc: "Double patty meat, onion, lettuce, tomato, ketchup, bacon and cheese.", price: "$10.99  ·  Meal $16.99" },
+      { name: "Chicken Burger", desc: "Chicken, lettuce, tomato, mayo and cheese.", price: "$9.25  ·  Meal $15.25" },
+      { name: "Buffalo Chicken Burger", desc: "Buffalo hot sauce, chicken, lettuce, tomato, mayo and cheese.", price: "$9.25  ·  Meal $15.25" },
+      { name: "BBQ Bacon & Cheese", desc: "Lettuce, tomato, beef patty, bacon, pickles, onion, mayo and BBQ sauce, cheese.", price: "$9.25  ·  Meal $15.25" },
+      { name: "Veggi Burger", desc: "Lettuce, tomato, pickles, onion, cheese, ketchup and veggi patty.", price: "$9.99  ·  Meal $15.99" },
+      { name: "Mushroom Burger", desc: "Beef patty, cheese, lettuce, mushroom sauce and sautéed onions.", price: "$9.49  ·  Meal $15.49" },
+      { name: "Donair Burger", desc: "Donair patty, donair sauce, tomato, cheese, lettuce and onions.", price: "$9.25  ·  Meal $15.25" },
+    ],
+  },
+  {
+    title: "Fresh Subs",
+    tagline: "6\" / 12\"  ·  Make a combo with fries & 1 can of pop for +$5.99",
+    items: [
+      { name: "Veggi Sub", desc: "Veggie on your choice & cheese.", price: "$7.99 / $11.99" },
+      { name: "Chicken Sub", desc: "Grilled chicken, cheese & veggie on your choice.", price: "$9.49 / $14.49" },
+      { name: "Beef Sub", desc: "Roasted beef, cheese & veggie on your choice.", price: "$9.49 / $14.49" },
+      { name: "Teriyaki Chicken", desc: "Teriyaki chicken, cheese & veggie on your choice.", price: "$9.49 / $14.49" },
+      { name: "Quality Sub", desc: "Turkey, beef, cheese, black forest ham, & veggie on your choice.", price: "$9.99 / $15.49" },
+      { name: "Quality Club", desc: "Grilled chicken, ham, cheese, bacon & veggie on your choice.", price: "$9.99 / $15.49" },
+      { name: "Donair Sub", desc: "Donair meat, donair sauce, cheese & veggie on your choice.", price: "$9.99 / $15.49" },
+    ],
+  },
+  {
+    title: "Wraps",
+    tagline: "Combo +$5.99 (fries & pop can)",
+    items: [
+      { name: "Buffalo Chicken Wrap / Crispy Chicken Wrap", desc: "Lettuce, tomato, crispy chicken, ranch, mozzarella cheese.", price: "$9.99  ·  Combo $5.99" },
+      { name: "Donair Wrap", desc: "Donair meat, lettuce, tomato, onion, cheese, donair sauce.", price: "$11.99  ·  Combo $5.99" },
+    ],
+  },
+  {
+    title: "Salads",
+    tagline: "Fresh & crisp",
+    items: [
+      { name: "Chicken Mediterranean Salad", desc: "Chicken, lettuce, green pepper, onion, cucumber, tomato, olives, feta cheese, Greek feta sauce.", price: "$10.99" },
+      { name: "Chicken Caesar Salad", desc: "Chicken, lettuce, parmesan cheese, bacon, croutons, Caesar dressing.", price: "$10.99" },
+      { name: "Garden Salad", desc: "Lettuce, tomato, cucumber, onion, green pepper, olives, dressing of your choice.", price: "$8.99" },
+    ],
+  },
+  {
+    title: "Poutine",
     tagline: "Comfort, the way it should be",
     items: [
-      { name: "Poutine", desc: "Hot fries, cheese curds, rich gravy.", price: "$6.99" },
-      { name: "Regular Fries or Onion Rings", price: "$3.99" },
-      { name: "Large Fries or Onion Rings", price: "$5.99" },
-      { name: "Mozza Sticks (4 pcs)", price: "$4.89" },
-      { name: "Mozza Stick Combo", desc: "4 pcs mozza sticks, fries + pop can.", price: "$9.90" },
+      { name: "Reg. Poutine", price: "$7.99" },
+      { name: "Large Poutine", price: "$10.49" },
+      { name: "Reg. Fries / Onion Ring", price: "$5.99" },
+      { name: "Large Fries / Onion Ring", price: "$7.99" },
+    ],
+  },
+  {
+    title: "Sides",
+    tagline: "",
+    items: [
+      { name: "Potato Wedges", price: "$7.99" },
+      { name: "Fried Pickle (5 pcs)", price: "$6.99" },
+      { name: "Battered Mushroom (8 pcs)", price: "$7.99" },
+      { name: "Battered Shrimps", price: "$11.99" },
+      { name: "Spring Rolls (6 pcs)", desc: "Veggi, pork, chicken.", price: "$7.99" },
+    ],
+  },
+  {
+    title: "Dry Ribs",
+    tagline: "",
+    items: [
+      { name: "Regular", price: "$12.99" },
+      { name: "Large", price: "$24.99" },
+    ],
+  },
+  {
+    title: "Mozza Sticks",
+    tagline: "Make a combo with fries & pop can for +$5.99",
+    items: [
+      { name: "4 pcs Mozza Sticks", price: "$6.99" },
+    ],
+  },
+  {
+    title: "Fried Fish",
+    tagline: "Available Wednesday, Thursday & Friday",
+    items: [
+      { name: "Fried Fish", price: "$16.99" },
+    ],
+  },
+  {
+    title: "Spaghetti",
+    tagline: "",
+    items: [
+      { name: "Regular", price: "$10.99" },
+      { name: "Large", price: "$15.99" },
+      { name: "Add Meat Balls (3 pcs)", price: "$3.99" },
+      { name: "Garlic Toast (2 pcs)", price: "$3.99" },
+    ],
+  },
+  {
+    title: "Breakfast",
+    tagline: "Available 10AM to 12PM",
+    items: [
+      { name: "2 Eggs + Bacon + Toast + Hashbrown & Coffee", price: "$11.99" },
+      { name: "Breakfast Sandwich + Hashbrown & Coffee", desc: "Egg & cheese, egg & bacon or egg & sausage sandwiches.", price: "$9.99" },
+      { name: "Coffee", price: "$2.50" },
+      { name: "Refill", price: "$0.99" },
     ],
   },
 ];
@@ -116,7 +185,8 @@ function MenuPage() {
           <h1 className="mt-3 font-display text-5xl font-bold">Made fresh, made right</h1>
           <p className="mx-auto mt-4 max-w-xl text-muted-foreground">
             Everything is made to order. Prices and items may vary — call us at
-            (780) 764-2233 to confirm.
+            (780) 764-2233 to confirm. Prices do not include GST. Dine-in extra
+            charge may apply.
           </p>
         </div>
       </section>
@@ -146,9 +216,11 @@ function MenuPage() {
                       </div>
                     )}
                   </div>
-                  <div className="font-display text-lg font-semibold text-primary">
-                    {item.price}
-                  </div>
+                  {item.price && (
+                    <div className="font-display text-lg font-semibold text-primary">
+                      {item.price}
+                    </div>
+                  )}
                 </li>
               ))}
             </ul>
