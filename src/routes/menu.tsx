@@ -8,7 +8,7 @@ export const Route = createFileRoute("/menu")({
       {
         name: "description",
         content:
-          "Browse our full menu: hand-tossed pizzas, loaded subs, poutine, sides, and drinks. Mundare, Alberta.",
+          "Browse our full menu: fresh pizzas, loaded subs, poutine, sides, and drinks. Mundare, Alberta.",
       },
       { property: "og:title", content: "Menu — Quality Pizza & Subs" },
       {
@@ -45,7 +45,7 @@ const sections: Section[] = [
   },
   {
     title: "Pizza Deals",
-    tagline: "Hand-tossed pairs",
+    tagline: "Pizza pairs",
     items: [
       { name: "2 Medium 12\" Pizzas", desc: "Pick any two from our menu.", price: "$25.99" },
       { name: "2 Large 14\" Pizzas", desc: "Pick any two from our menu.", price: "$35.99" },
