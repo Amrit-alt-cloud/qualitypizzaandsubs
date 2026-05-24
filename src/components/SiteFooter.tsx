@@ -31,10 +31,15 @@ export function SiteFooter() {
               (780) 764-2233
             </a>
           </p>
-          <p className="mt-2 flex items-center gap-2 text-sm text-muted-foreground">
-            <Clock className="h-4 w-4 text-primary" />
-            Open today · Closes 8 p.m.
-          </p>
+          <div className="mt-2 flex items-start gap-2 text-sm text-muted-foreground">
+            <Clock className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
+            <div className="space-y-0.5">
+              <div className="flex justify-between gap-3"><span className="text-muted-foreground">Mon–Thu</span><span>11 a.m. – 8 p.m.</span></div>
+              <div className="flex justify-between gap-3"><span className="text-muted-foreground">Fri</span><span>11 a.m. – 9 p.m.</span></div>
+              <div className="flex justify-between gap-3"><span className="text-muted-foreground">Sat</span><span>12 p.m. – 9 p.m.</span></div>
+              <div className="flex justify-between gap-3"><span className="text-muted-foreground">Sun</span><span>12 p.m. – 8 p.m.</span></div>
+            </div>
+          </div>
         </div>
         <div>
           <h4 className="text-sm font-semibold uppercase tracking-wider text-foreground">
