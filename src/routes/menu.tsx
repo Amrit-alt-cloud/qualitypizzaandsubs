@@ -59,8 +59,8 @@ const sections: Section[] = [
     title: "Chicken Strips",
     tagline: "",
     items: [
-      { name: "3 pcs Chicken Strips", price: "$8.99  ·  + Combo $5.99" },
-      { name: "5 pcs Chicken Strips", price: "$12.99  ·  + Combo $5.99" },
+      { name: "3 pcs Chicken Strips", price: "$8.99 + Combo $5.99" },
+      { name: "5 pcs Chicken Strips", price: "$12.99 + Combo $5.99" },
     ],
   },
   {
@@ -80,7 +80,7 @@ const sections: Section[] = [
   },
   {
     title: "Fresh Subs",
-    tagline: "6\" / 12\"  ·  Make a combo with fries & 1 can of pop for +$5.99",
+    tagline: "6\" / 12\" + Make a combo with fries & 1 can of pop for +$5.99",
     items: [
       { name: "Veggi Sub", desc: "Veggie on your choice & cheese.", price: "$7.99 / $11.99" },
       { name: "Chicken Sub", desc: "Grilled chicken, cheese & veggie on your choice.", price: "$9.49 / $14.49" },
@@ -95,8 +95,8 @@ const sections: Section[] = [
     title: "Wraps",
     tagline: "",
     items: [
-      { name: "Buffalo Chicken Wrap / Crispy Chicken Wrap", desc: "Lettuce, tomato, crispy chicken, ranch, mozzarella cheese.", price: "$9.99  ·  + Combo $5.99" },
-      { name: "Donair Wrap", desc: "Donair meat, lettuce, tomato, onion, cheese, donair sauce.", price: "$11.99  ·  + Combo $5.99" },
+      { name: "Buffalo Chicken Wrap / Crispy Chicken Wrap", desc: "Lettuce, tomato, crispy chicken, ranch, mozzarella cheese.", price: "$9.99 + Combo $5.99" },
+      { name: "Donair Wrap", desc: "Donair meat, lettuce, tomato, onion, cheese, donair sauce.", price: "$11.99 + Combo $5.99" },
     ],
   },
   {
