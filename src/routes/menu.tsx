@@ -65,7 +65,7 @@ const sections: Section[] = [
   },
   {
     title: "Burgers",
-    tagline: "Sandwich  ·  Meal (fries & 1 pop can)",
+    tagline: "Sandwich / Meal (fries & 1 pop can)",
     items: [
       { name: "Hamburger", desc: "Lettuce, tomatoes, ketchup, mustard, beef patty, bacon, pickles, cheese and onion.", price: "$9.25  ·  Meal $15.25" },
       { name: "Cheese Burger", desc: "Lettuce, tomatoes, cheese, ketchup, mustard and beef.", price: "$7.99  ·  Meal $13.99" },
