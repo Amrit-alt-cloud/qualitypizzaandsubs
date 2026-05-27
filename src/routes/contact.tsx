@@ -24,13 +24,13 @@ export const Route = createFileRoute("/contact")({
 });
 
 const hours = [
-  ["Monday", "11 a.m. – 8 p.m."],
-  ["Tuesday", "11 a.m. – 8 p.m."],
-  ["Wednesday", "11 a.m. – 8 p.m."],
-  ["Thursday", "11 a.m. – 8 p.m."],
-  ["Friday", "11 a.m. – 9 p.m."],
-  ["Saturday", "12 p.m. – 9 p.m."],
-  ["Sunday", "12 p.m. – 8 p.m."],
+  ["Sunday", "9 a.m. – 8 p.m."],
+  ["Monday", "9 a.m. – 8 p.m."],
+  ["Tuesday", "9 a.m. – 8 p.m."],
+  ["Wednesday", "9 a.m. – 9 p.m."],
+  ["Thursday", "9 a.m. – 9 p.m."],
+  ["Friday", "9 a.m. – 9 p.m."],
+  ["Saturday", "9 a.m. – 9 p.m."],
 ];
 
 function ContactPage() {

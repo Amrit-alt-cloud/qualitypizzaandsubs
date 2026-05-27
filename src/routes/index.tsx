@@ -141,10 +141,8 @@ function Home() {
               <div className="text-sm">
                 <div className="font-medium text-primary-foreground">Hours</div>
                 <div className="mt-1 space-y-0.5 text-primary-foreground/85">
-                  <div className="flex justify-between gap-4"><span>Mon–Thu</span><span>11 a.m. – 8 p.m.</span></div>
-                  <div className="flex justify-between gap-4"><span>Fri</span><span>11 a.m. – 9 p.m.</span></div>
-                  <div className="flex justify-between gap-4"><span>Sat</span><span>12 p.m. – 9 p.m.</span></div>
-                  <div className="flex justify-between gap-4"><span>Sun</span><span>12 p.m. – 8 p.m.</span></div>
+                  <div className="flex justify-between gap-4"><span>Sun–Tue</span><span>9 a.m. – 8 p.m.</span></div>
+                  <div className="flex justify-between gap-4"><span>Wed–Sat</span><span>9 a.m. – 9 p.m.</span></div>
                 </div>
               </div>
             </InfoRow>
