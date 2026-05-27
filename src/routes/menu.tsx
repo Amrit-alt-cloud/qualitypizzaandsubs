@@ -125,13 +125,6 @@ const sections: Section[] = [
     ],
   },
   {
-    title: "Combos",
-    tagline: "Add to any eligible item — fries & 1 can of pop",
-    items: [
-      { name: "+ Combo upgrade", desc: "Available on chicken strips, burgers, subs, wraps and mozza sticks.", price: "+ $5.99" },
-    ],
-  },
-  {
     title: "Sides",
     tagline: "",
     items: [
