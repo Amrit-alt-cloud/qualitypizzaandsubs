@@ -177,6 +177,16 @@ const sections: Section[] = [
       { name: "Refill", price: "$1.50" },
     ],
   },
+  {
+    title: "Hard Ice Cream",
+    tagline: "Available now",
+    items: [
+      { name: "Single Scoop", price: "$3.99" },
+      { name: "Double Scoop", price: "$5.99" },
+      { name: "Triple Scoop", price: "$7.99" },
+      { name: "Milkshake", price: "$6.99" },
+    ],
+  },
 ];
 
 
