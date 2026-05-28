@@ -179,11 +179,9 @@ const sections: Section[] = [
   },
   {
     title: "Hard Ice Cream",
-    tagline: "Available now",
+    tagline: "Flavours vary — ask us what's available today",
     items: [
-      { name: "Single Scoop", price: "" },
-      { name: "Double Scoop", price: "" },
-      { name: "Triple Scoop", price: "" },
+      { name: "Hard Ice Cream Available", price: "" },
     ],
   },
 ];
