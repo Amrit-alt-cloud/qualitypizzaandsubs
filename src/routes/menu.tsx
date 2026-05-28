@@ -173,8 +173,8 @@ const sections: Section[] = [
     items: [
       { name: "2 Eggs + Bacon + Toast + Hashbrown & Coffee", price: "$11.99" },
       { name: "Breakfast Sandwich + Hashbrown & Coffee", desc: "Egg & cheese, egg & bacon or egg & sausage sandwiches.", price: "$9.99" },
-      { name: "Coffee", price: "$2.50" },
-      { name: "Refill", price: "$0.99" },
+      { name: "Coffee", price: "$2.99" },
+      { name: "Refill", price: "$1.50" },
     ],
   },
 ];
