@@ -179,7 +179,7 @@ const sections: Section[] = [
   },
   {
     title: "Hard Ice Cream",
-    tagline: "Flavours vary — ask us what's available today",
+    tagline: "",
     items: [
       { name: "Hard Ice Cream Available", price: "" },
     ],
