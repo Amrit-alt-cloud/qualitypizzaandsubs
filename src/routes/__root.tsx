@@ -72,14 +72,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
+      { title: "Quality Pizza & Subs" },
+      { name: "description", content: "A website for Quality Pizza And Subs, showcasing their menu, hours, and contact information." },
       { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { property: "og:title", content: "Quality Pizza & Subs" },
+      { property: "og:description", content: "A website for Quality Pizza And Subs, showcasing their menu, hours, and contact information." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "Quality Pizza & Subs" },
+      { name: "twitter:description", content: "A website for Quality Pizza And Subs, showcasing their menu, hours, and contact information." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/c0bed95b-3e8a-4b48-988a-71d25d4363bb/id-preview-3233c9db--d41a9840-8fb0-4498-8e9b-9bce2d9ff9b8.lovable.app-1779931202637.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/c0bed95b-3e8a-4b48-988a-71d25d4363bb/id-preview-3233c9db--d41a9840-8fb0-4498-8e9b-9bce2d9ff9b8.lovable.app-1779931202637.png" },
     ],
     links: [
       {
