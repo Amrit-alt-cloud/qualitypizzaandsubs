@@ -178,10 +178,17 @@ const sections: Section[] = [
     ],
   },
   {
-    title: "Hard Ice Cream",
+    title: "Foothill Creamery Hard Ice Cream",
     tagline: "",
     items: [
       { name: "Hard Ice Cream Available", price: "" },
+    ],
+  },
+  {
+    title: "Milkshakes Available",
+    tagline: "",
+    items: [
+      { name: "Milkshakes Available", price: "" },
     ],
   },
 ];
