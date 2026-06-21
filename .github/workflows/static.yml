@@ -32,7 +32,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Setup Pages
-        uses: actions/configure-pages@v5 - run: npm install && npmrun build
+        uses: actions/configure-pages@v5 
+      - run: npm install && npmrun build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
