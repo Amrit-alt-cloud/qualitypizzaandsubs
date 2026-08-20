@@ -81,7 +81,7 @@ function Home() {
               {
                 title: "Large Poutine",
                 desc: "Hot fries, squeaky curds, and rich house gravy.",
-                price: "$10.49",
+                price: "$11.99",
               },
               {
                 title: "10 pcs Chicken Wings",
@@ -91,7 +91,7 @@ function Home() {
               {
                 title: "Chicken Burger",
                 desc: "Crispy breaded chicken, lettuce, tomato, mayo and cheese.",
-                price: "$9.25",
+                price: "$9.49",
               },
             ].map((item) => (
               <article
