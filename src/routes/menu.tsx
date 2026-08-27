@@ -22,7 +22,7 @@ export const Route = createFileRoute("/menu")({
   component: MenuPage,
 });
 
-type Item = { name: string; desc?: string; price: string };
+type Item = { name: string; desc?: string; price?: string };
 type Section = { title: string; tagline: string; items: Item[] };
 
 const sections: Section[] = [
