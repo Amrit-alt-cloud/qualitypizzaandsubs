@@ -72,7 +72,7 @@ const sections: Section[] = [
       { name: "Quality Burger", desc: "Double patty meat, onion, lettuce, tomato, ketchup, bacon and cheese.", price: "$11.99 / Meal $18.99" },
       { name: "Chicken Burger", desc: "Chicken, lettuce, tomato, mayo and cheese.", price: "$9.49 / Meal $16.49" },
       { name: "Buffalo Chicken Burger", desc: "Buffalo hot sauce, chicken, lettuce, tomato, mayo and cheese.", price: "$9.49 / Meal $16.49" },
-      { name: "BBQ Bacon & Cheese", desc: "Lettuce, tomato, beef patty, bacon, pickles, onion, mayo and BBQ sauce, cheese.", price: "$9.49 / Meal $16.49" },
+      { name: "BBQ Bacon & Cheese", desc: "Lettuce, tomato, beef patty, bacon, pickles, onion, mayo and BBQ sauce, cheese.", price: "$9.75 / Meal $16.49" },
       { name: "Veggi Burger", desc: "Lettuce, tomato, pickles, onion, cheese, ketchup and veggi patty.", price: "$9.99 / Meal $16.99" },
       { name: "Mushroom Burger", desc: "Beef patty, cheese, lettuce, mushroom sauce and sautéed onions.", price: "$9.75 / Meal $16.99" },
       { name: "Donair Burger", desc: "Donair patty, donair sauce, tomato, cheese, lettuce and onions.", price: "$9.75 / Meal $16.99" },
