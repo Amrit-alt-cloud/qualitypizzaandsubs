@@ -86,7 +86,7 @@ const sections: Section[] = [
       { name: "Chicken Sub", desc: "Grilled chicken, cheese & veggie on your choice.", price: "$9.49 / $15.99" },
       { name: "Beef Sub", desc: "Roasted beef, cheese & veggie on your choice.", price: "$9.99 / $16.99" },
       { name: "Teriyaki Chicken", desc: "Teriyaki chicken, cheese & veggie on your choice.", price: "$9.49 / $15.99" },
-      { name: "Quality Sub", desc: "Turkey, beef, cheese, black forest ham, & veggie on your choice.", price: "$9.99 / $16.99" },
+      { name: "Quality Sub", desc: "Chicken, beef, cheese, ham, & veggie on your choice.", price: "$9.99 / $16.99" },
       { name: "Quality Club", desc: "Grilled chicken, ham, cheese, bacon & veggie on your choice.", price: "$9.99 / $16.99" },
       { name: "Donair Sub", desc: "Donair meat, donair sauce, cheese & veggie on your choice.", price: "$9.99 / $16.99" },
     ],
@@ -174,7 +174,7 @@ const sections: Section[] = [
       { name: "2 Eggs + Bacon + Toast + Hashbrown & Coffee", price: "$12.99" },
       { name: "Breakfast Sandwich + Hashbrown & Coffee", desc: "Egg & cheese, egg & bacon or egg & sausage sandwiches.", price: "$10.99" },
       { name: "Coffee", price: "$2.99" },
-      { name: "Refill", price: "$1.50" },
+      { name: "Refill" },
     ],
   },
   {
